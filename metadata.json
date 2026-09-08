@@ -1,0 +1,25 @@
+{
+  "name": "Electronics Toolkit",
+  "appName": "Electronics Toolkit",
+  "version": "1.0.0",
+  "description": "A professional responsive website for ECE and electronics students, hobbyists, and beginners featuring real-time Resistor Color Code, Ohm's Law, LED Resistor, and Unit Conversion calculators with light and dark mode.",
+  "tools": [
+    "Resistor Color Code Calculator (4-band & 5-band)",
+    "Ohm's Law Calculator (V, I, R Solver)",
+    "LED Series Resistor & Power Calculator",
+    "Electronics Unit Converter (Resistance, Voltage, Current, Power)"
+  ],
+  "features": [
+    "Interactive 4-band and 5-band resistor color decoding with visual SVG resistor preview",
+    "Ohm's Law solver with unit multipliers, interactive triangle diagram, and step-by-step formula explanations",
+    "LED resistor calculator with LED color presets, standard E12 commercial snapping, power dissipation, and wattage safety ratings",
+    "Live bidirectional electronics unit converter for Resistance, Voltage, Current, and Power with scientific notation",
+    "Full responsive layout for mobile, tablet, and desktop",
+    "Toggleable Light and Dark mode with persistence",
+    "Vercel-ready modern web stack using React, TypeScript, and Tailwind CSS"
+  ],
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polygon points='13 2 3 14 12 14 11 22 21 10 12 10 13 2'></polygon></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electronics Toolkit - ECE & Circuit Calculations</title>
+    <meta name="description" content="A professional responsive website for ECE and electronics students, hobbyists, and beginners featuring real-time Resistor Color Code, Ohm's Law, LED Resistor, and Unit Conversion calculators with light and dark mode." />
+    <meta property="og:title" content="Electronics Toolkit - ECE & Circuit Calculations" />
+    <meta property="og:description" content="Professional calculators for Resistor Color Codes, Ohm's Law, LED Resistors, and Electronics Unit Conversion." />
+    <meta name="theme-color" content="#2563eb" />
+    <script>
+      // Early theme detection to prevent flash
+      try {
+        const savedTheme = localStorage.getItem('et_theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      } catch (e) {}
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 min-h-screen transition-colors duration-200 antialiased selection:bg-blue-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
